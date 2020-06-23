@@ -15,6 +15,7 @@ const faces = [
     '^w^',
     '(つ✧ω✧)つ',
     '(/ =ω=)/',
+    '~~'
     // TODO: Add more
 ];
 
@@ -23,9 +24,10 @@ module.exports = (str) => {
     str = str.replace(/(?:L|R)/g, 'W');
     str = str.replace(/n([aeiou])/g, 'ny$1');
     str = str.replace(/N([aeiou])|N([AEIOU])/g, 'Ny$1');
-    str = str.replace(/ove/g, 'uv');
-    str = str.replace(/nd(?= |$)/g, 'ndo');
-    str = str.replace(/([!,.])+/g,` ${faces[Math.floor(Math.random() * faces.length)]}`);
+    str = str.replace(/ove/gi, 'uv');
+    str = str.replace(/nd(?= |$)/gi, 'ndo');
+    str = str.replace(/([!])+/g,` ${faces[Math.floor(Math.random() * faces.length)]}`);
+    str = str.replace(/([.])+/g,` ${faces[Math.floor(Math.random() * faces.length)]}`);
 
     return str;
 };
