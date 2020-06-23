@@ -1,5 +1,7 @@
-##  uwu-js
-Makes text uwu-ified
+# uwu-js 
+[![npm version](https://badge.fury.io/js/uwu-js.svg)](https://badge.fury.io/js/uwu-js)
+
+Helps make your text uwu-ified
 
 ## Installation
 `npm i uwu-js --save`
