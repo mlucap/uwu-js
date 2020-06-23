@@ -25,7 +25,7 @@ module.exports = (str) => {
     str = str.replace(/N([aeiou])|N([AEIOU])/g, 'Ny$1');
     str = str.replace(/ove/g, 'uv');
     str = str.replace(/nd(?= |$)/g, 'ndo');
-    str = str.replace(/([!,.])+/g,` ${kaomoji[Math.floor(Math.random() * kaomoji.length)]}`);
+    str = str.replace(/([!,.])+/g,` ${faces[Math.floor(Math.random() * faces.length)]}`);
 
     return str;
 };
