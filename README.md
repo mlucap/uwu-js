@@ -1,4 +1,5 @@
 ##  uwu-js
+Makes text uwu-ified
 
 ## Installation
 `npm i uwu-js --save`
