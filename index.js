@@ -26,8 +26,8 @@ module.exports = (str) => {
     str = str.replace(/N([aeiou])|N([AEIOU])/g, 'Ny$1');
     str = str.replace(/ove/gi, 'uv');
     str = str.replace(/nd(?= |$)/gi, 'ndo');
-    str = str.replace(/([!])+/g,` ${faces[Math.floor(Math.random() * faces.length)]}`);
-    str = str.replace(/([.])+/g,` ${faces[Math.floor(Math.random() * faces.length)]}`);
+    str = str.replace(/([!])+/g, v => ` ${faces[Math.floor(Math.random() * faces.length)]}`);
+    str = str.replace(/([.])+/g, v => ` ${faces[Math.floor(Math.random() * faces.length)]}`);
 
     return str;
 };
